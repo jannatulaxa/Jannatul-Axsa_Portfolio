@@ -2,6 +2,12 @@ import axios from "axios";
 import fileDownload from "js-file-download";
 import { Helmet } from "react-helmet";
 import { FaCloudDownloadAlt } from "react-icons/fa";
+import Skills from "./Skills";
+import Education from "./Education";
+import "./bg.css"
+import ProjectView from "./ProjectView/ProjectView";
+import React from 'react';
+import image from '../../assets/Fav-icone-image/images.png';
 
 
 const Home = () => {
@@ -14,8 +20,8 @@ const Home = () => {
     <div>
       <Helmet title="Home"></Helmet>
 
-      <div className="flex text-white">
-        <div className="w-[80%] mx-auto mt-28 mb-20"> 
+      <div className="flex flex-col md:flex-row justify-around  mx-auto w-[90%] text-white ">
+        <div className=" mt-28 mb-20"> 
           <h1 className=" md:text-7xl text-4xl">
             <span className="text-2xl md:text-6xl">Hi, This is</span> <br /> <span className="">
             Jannatul Axsa
@@ -29,8 +35,16 @@ const Home = () => {
 
           </button>
         </div>
-        
+        <div className="border rounded-full border-[#FD02FE] shadow-lg  mt-28 mb-20"
+          style={{ boxShadow: "0px 0px 20px 0px #FD02FE, 0 0px 0px 0px #FD02FE" }}
+          >
+        <img src={image} alt="" className="rounded-full h-96 w-96"/>
+
+        </div>
       </div>
+      <Skills/>
+      <Education/>
+      <ProjectView/>
     </div>
   );
 };

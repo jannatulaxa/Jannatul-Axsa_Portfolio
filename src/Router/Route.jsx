@@ -1,10 +1,13 @@
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "../Layouts/MainLayout/MainLayout";
 import Projects from "../Pages/Projects/Projects";
 import Home from "../Pages/Home/Home";
 import Contact from "../Pages/Contact/Contact";
+import MainLayout from "../Layouts/MainLayout/MainLayout";
 
-const Route = createBrowserRouter([
+const Routes = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout></MainLayout>,
@@ -25,4 +28,4 @@ const Route = createBrowserRouter([
     },
   ]);
 
-  export default Route;
+  export default Routes;

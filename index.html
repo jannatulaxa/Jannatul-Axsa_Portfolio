@@ -2,7 +2,11 @@
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/Fav-icone-image/favicone.png" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/assets/Fav-icone-image/favicone.png"
+    />
     <!-- Google font Kalnia & Leckerli One-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Leckerli+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jannatul Axsa | Frontend Web Devoloper</title>
     <style>
@@ -19,13 +24,26 @@
       .font-Leckerli {
         font-family: "Leckerli One";
       }
-      .bg-color{
+      .bg-color {
         background-color: #000000;
       }
     </style>
   </head>
-  <body class="font-Kalnia bg-color" >
+  <body class="font-Kalnia bg-color">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("ae81gXxAu8DlvbYzP");
+      })();
+    </script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

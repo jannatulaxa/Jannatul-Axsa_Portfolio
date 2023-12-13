@@ -1,0 +1,20 @@
+/* ProjectView.css */
+.project-container {
+    position: relative;
+    width: 30%;
+    height: 40vh;
+    overflow: hidden;
+    box-shadow: 2px 0px 30px rgba(253, 2, 254, 0.5); /* Adjust shadow styles as needed */
+    border: 1px solid #FD02FE; /* Adjust border styles as needed */
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .project-container:hover .project-image {
+    transform: translateY(-50%);
+  }
+  

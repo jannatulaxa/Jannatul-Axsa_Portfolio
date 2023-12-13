@@ -1,0 +1,12 @@
+.bg-image{
+    background-image: url('../../../src/assets/Fav-icone-image/images.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+    margin-top: -15px;
+    /* background-size: unset; */
+    margin-left: -55px;
+    width: 100vw;
+    /* overflow-x: hidden; */
+    
+}
